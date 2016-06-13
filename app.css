@@ -2205,7 +2205,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
     color: #003c40;
     background-color: transparent; }
     .open > .btn-link.dropdown-toggle:focus, .open > .btn-link.dropdown-toggle.focus {
-      background-color: #e6e6e6; }
+      background-color: #e6e6e6;
+      border-color: #e6e6e6; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 11px 19px;
