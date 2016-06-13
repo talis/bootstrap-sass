@@ -144,7 +144,7 @@
   > .btn {
     position: relative;
     background-color: $input-bg;
-    border-left-color: $white;
+    border-left-color: $white !important;
     + .btn {
       margin-left: -1px;
     }
@@ -152,10 +152,12 @@
     &:hover,
     &:focus {
       background-color: darken($input-bg, 4%);
+      border-color: darken($input-bg, 4%);
       z-index: 2;
     }
     &:active {
       background-color: darken($input-bg, 10%);
+      border-color: darken($input-bg, 10%);
     }
   }
 

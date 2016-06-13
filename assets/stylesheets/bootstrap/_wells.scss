@@ -62,6 +62,11 @@ $all-text-inputs: _assing-inputs($_text-inputs-list);
 
   .form-control {
     background-color: $white;
+    border-color: $white;
+
+    &:focus {
+      border-color: $brand-primary;
+    }
   }
   // #{$all-text-inputs} {
   //   background-color: $white;
@@ -69,15 +74,18 @@ $all-text-inputs: _assing-inputs($_text-inputs-list);
 
   .input-group-btn > .btn {
     background-color: $white;
-    border-left-color: $well-bg;
+    border-color: $white;
+    border-left-color: $well-bg !important;
 
     &:hover {
       background-color: $gray-superlight;
+      border-color: $gray-superlight;
     }
 
     &:active,
     &:focus {
       background-color: $misty;
+      border-color: $misty;
     }
   }
 
