@@ -20,7 +20,6 @@
       position: relative;
       display: block;
       padding: $nav-link-padding;
-      border: 1px solid transparent;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -127,7 +126,7 @@
     // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
-
+      border: 1px solid transparent;
       &:hover,
       &:focus,
       &:active {
