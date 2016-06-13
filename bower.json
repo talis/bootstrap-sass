@@ -32,5 +32,8 @@
   "dependencies": {
     "jquery": ">= 1.9.0"
   },
-  "version": "3.3.6"
+  "version": "3.3.6",
+  "devDependencies": {
+    "hologram-github-theme": "^0.1.4"
+  }
 }
