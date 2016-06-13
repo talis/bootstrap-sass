@@ -456,7 +456,7 @@ input[type="checkbox"] {
   margin-top: 5px;
   margin-bottom: 10px;
   font-style: italic;
-  color: lighten(saturate(adjust-hue($text-color, 0.0000), 0.0000), 18.0392); // lighten the text some for contrast
+  color: $gray; // lighten the text some for contrast
 }
 
 

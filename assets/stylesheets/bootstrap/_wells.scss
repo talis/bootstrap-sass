@@ -75,7 +75,6 @@ $all-text-inputs: _assing-inputs($_text-inputs-list);
   .input-group-btn > .btn {
     background-color: $white;
     border-color: $white;
-    border-left-color: $well-bg !important;
 
     &:hover {
       background-color: $gray-superlight;

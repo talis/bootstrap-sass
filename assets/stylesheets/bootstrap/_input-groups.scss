@@ -144,7 +144,6 @@
   > .btn {
     position: relative;
     background-color: $input-bg;
-    border-left-color: $white !important;
     + .btn {
       margin-left: -1px;
     }
@@ -172,7 +171,7 @@
     > .btn,
     > .btn-group {
       z-index: 2;
-      margin-left: -1px;
+      margin-left: 1px;
     }
   }
 }

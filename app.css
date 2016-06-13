@@ -1671,7 +1671,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 45px; } }
+    line-height: 47px; } }
 .form-group {
   margin-bottom: 15px; }
 
@@ -1791,8 +1791,8 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 45px;
-  padding: 10px 16px;
+  height: 47px;
+  padding: 11px 19px;
   font-size: 17px;
   line-height: 1.33333;
   border-radius: 5px; }
@@ -1800,8 +1800,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 45px;
-  line-height: 45px; }
+  height: 47px;
+  line-height: 47px; }
 
 textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
@@ -1813,21 +1813,21 @@ select[multiple].input-lg,
   height: auto; }
 
 .form-group-lg .form-control {
-  height: 45px;
-  padding: 10px 16px;
+  height: 47px;
+  padding: 11px 19px;
   font-size: 17px;
   line-height: 1.33333;
   border-radius: 5px; }
 .form-group-lg select.form-control {
-  height: 45px;
-  line-height: 45px; }
+  height: 47px;
+  line-height: 47px; }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto; }
 .form-group-lg .form-control-static {
-  height: 45px;
+  height: 47px;
   min-height: 37px;
-  padding: 11px 16px;
+  padding: 12px 19px;
   font-size: 17px;
   line-height: 1.33333; }
 
@@ -1853,9 +1853,9 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 45px;
-  height: 45px;
-  line-height: 45px; }
+  width: 47px;
+  height: 47px;
+  line-height: 47px; }
 
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
@@ -1924,7 +1924,7 @@ select[multiple].input-lg,
   margin-top: 5px;
   margin-bottom: 10px;
   font-style: italic;
-  color: #8c8c8c; }
+  color: #5e5e5e; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -1996,7 +1996,7 @@ select[multiple].input-lg,
   right: 15px; }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 11px;
+    padding-top: 12px;
     font-size: 17px; } }
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
@@ -2201,7 +2201,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 10px 16px;
+  padding: 11px 19px;
   font-size: 17px;
   line-height: 1.33333;
   border-radius: 5px; }
@@ -2606,7 +2606,7 @@ tbody.collapse.in {
   .input-group-addon.input-lg,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
-    padding: 10px 16px;
+    padding: 11px 19px;
     font-size: 17px;
     border-radius: 5px; }
   .input-group-addon input[type="radio"],
@@ -2645,8 +2645,7 @@ tbody.collapse.in {
   white-space: nowrap; }
   .input-group-btn > .btn {
     position: relative;
-    background-color: #ebebeb;
-    border-left-color: #ffffff !important; }
+    background-color: #ebebeb; }
     .input-group-btn > .btn + .btn {
       margin-left: -1px; }
     .input-group-btn > .btn:hover, .input-group-btn > .btn:focus {
@@ -2662,7 +2661,7 @@ tbody.collapse.in {
   .input-group-btn:last-child > .btn,
   .input-group-btn:last-child > .btn-group {
     z-index: 2;
-    margin-left: -1px; }
+    margin-left: 1px; }
 
 .nav {
   margin-bottom: 0;
@@ -3196,7 +3195,7 @@ tbody.collapse.in {
       padding: 0 5px;
       color: #5e5e5e; }
   .breadcrumb > .active {
-    color: #8c8c8c; }
+    color: #5e5e5e; }
 
 .pagination {
   display: inline-block;
@@ -3260,7 +3259,7 @@ tbody.collapse.in {
 
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 11px 19px;
   font-size: 17px;
   line-height: 1.33333; }
 .pagination-lg > li:first-child > a,
@@ -3442,8 +3441,7 @@ a.label:hover, a.label:focus {
       border-color: #017d87; }
   .well .input-group-btn > .btn {
     background-color: #ffffff;
-    border-color: #ffffff;
-    border-left-color: #ebebeb !important; }
+    border-color: #ffffff; }
     .well .input-group-btn > .btn:hover {
       background-color: #fafafa;
       border-color: #fafafa; }
