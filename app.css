@@ -2108,7 +2108,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-warning:focus, fieldset[disabled]
   .btn-warning.focus {
     background-color: #fff;
-    border-color: #ebebeb; }
+    border-color: #ebebeb;
+    color: #5e5e5e; }
   .btn-default .badge,
   .btn-success .badge,
   .btn-warning .badge {
@@ -2131,7 +2132,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-image: none; }
   .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
     background-color: #017d87;
-    border-color: #017d87; }
+    border-color: #017d87;
+    color: #5e5e5e; }
   .btn-primary .badge {
     color: #017d87;
     background-color: #fff; }
@@ -2152,7 +2154,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-image: none; }
   .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus {
     background-color: #c5197d;
-    border-color: #c5197d; }
+    border-color: #c5197d;
+    color: #5e5e5e; }
   .btn-info .badge {
     color: #c5197d;
     background-color: #fff; }
@@ -2176,7 +2179,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-image: none; }
   .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus {
     background-color: #fff;
-    border-color: #ebebeb; }
+    border-color: #ebebeb;
+    color: #5e5e5e; }
   .btn-danger .badge {
     color: #fff;
     background-color: #a02f2b; }
