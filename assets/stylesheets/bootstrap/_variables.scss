@@ -393,7 +393,7 @@ $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $white !default;
 $navbar-default-bg:                $brand-primary !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-border:            $accent !default;
 
 // Navbar links
 $navbar-default-link-color:                $white !default;
@@ -450,8 +450,8 @@ $nav-link-padding:                          10px 15px !default;
 $nav-link-hover-bg:                         $gray-superlight !default;
 $nav-link-down-bg:                          $misty !default;
 
-$nav-disabled-link-color:                   $gray-light !default;
-$nav-disabled-link-hover-color:             $gray-light !default;
+$nav-disabled-link-color:                   $gray !default;
+$nav-disabled-link-hover-color:             $gray !default;
 
 //== Tabs
 $nav-tabs-border-color:                     $gray-lighter !default;
@@ -584,7 +584,7 @@ $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%
 //##
 
 //** Default label background color
-$label-default-bg:            $gray-light !default;
+$label-default-bg:            $gray !default;
 //** Primary label background color
 $label-primary-bg:            $brand-primary !default;
 //** Success label background color
