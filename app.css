@@ -2034,7 +2034,7 @@ select[multiple].input-lg,
     background-image: none; }
   .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     cursor: not-allowed;
-    color: #8c8c8c; }
+    color: #5e5e5e; }
 
 a.btn.disabled, fieldset[disabled] a.btn {
   pointer-events: none; }
@@ -2108,8 +2108,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-warning:focus, fieldset[disabled]
   .btn-warning.focus {
     background-color: #fff;
-    border-color: #ebebeb;
-    color: #8c8c8c; }
+    border-color: #ebebeb; }
   .btn-default .badge,
   .btn-success .badge,
   .btn-warning .badge {
@@ -2177,8 +2176,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-image: none; }
   .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus {
     background-color: #fff;
-    border-color: #ebebeb;
-    color: #8c8c8c; }
+    border-color: #ebebeb; }
   .btn-danger .badge {
     color: #fff;
     background-color: #a02f2b; }
@@ -2197,8 +2195,13 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-link:active {
     background-color: #ebebeb; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
-    color: #8c8c8c;
+    color: #5e5e5e;
     text-decoration: none; }
+  .open > .btn-link.dropdown-toggle {
+    color: #003c40;
+    background-color: transparent; }
+    .open > .btn-link.dropdown-toggle:focus, .open > .btn-link.dropdown-toggle.focus {
+      background-color: #e6e6e6; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 11px 19px;
@@ -2327,7 +2330,7 @@ tbody.collapse.in {
   background-color: #005d64; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
-  color: #8c8c8c; }
+  color: #5e5e5e; }
 .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   background-color: transparent;
