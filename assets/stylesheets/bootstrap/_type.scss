@@ -1,3 +1,46 @@
+/*doc
+---
+title: Headings
+name: headings
+category: Typography
+---
+
+Use heading elements to add structure to your document.
+
+```html_example
+<h1>Page Title</h1>
+<h2>Subtitle</h2>
+<h3>Section title</h3>
+<h4>Subsection Title</h4>
+<h5>Minor title</h5>
+<h6>Minor title</h6>
+```
+
+We use a “double-stranded" hierarchy to define our headings. That is to say: there is an associated class for each heading style.
+If you wish an element to look like a h1, but it doesn’t deserve the meaning associated with it, a class of .alpha can be applied.
+The current naming-convention uses the first six letters of the Greek alphabet:
+
+- alpha
+- beta
+- gamma
+- delta
+- epsilon
+- zeta
+
+```html_example
+<h6 class="alpha">h6, or h1?</h6>
+<span class="beta">A humble span</>
+<p class="gamma">Paragraph text</p>
+<h4>Subsection Title</h4>
+<h5>Minor title</h5>
+<h6>Minor title</h6>
+```
+
+While HTML5 introduced the idea of being able to use a new `<h1>` per sectioning element,
+the idea has now been scrapped: there should only be one `<h1`> per page.
+*/
+
+
 //
 // Typography
 // --------------------------------------------------
@@ -69,6 +112,37 @@ h3, .h3 { font-size: $font-size-h3; }
 h4, .h4 { font-size: $font-size-h4; }
 h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
+
+
+/*doc
+---
+title: Body
+name: body
+category: Typography
+---
+
+Our core typeface is Open Sans, available from [Google Fonts](https://fonts.google.com/specimen/Open+Sans?query=open+sans).
+It's set at 13px with a line-height of 20px. Ensure that any new elements maintain this, so that margin and padding are factors
+of 20.
+
+
+```html_example
+<p>Use heading elements to add structure to your document. We use a “double-stranded heading hierarchy” to define our headings.
+That is to say: there is an associated class for each heading style. If you wish an element to look like a h1, but it doesn’t deserve the meaning associated with it, a class of .alpha can be applied.
+The current naming-convention uses the first six letters of the Greek alphabet:</p>
+<ul>
+  <li>Alpha</li>
+  <li>Beta</li>
+  <li>Gamma</li>
+  <li>Delta</li>
+  <li>Epsilon</li>
+  <li>Zeta</li>
+</ul>
+
+Ensure that the font-weight property is defined using a numerical value rather than a keyword, and that the weight you are after is being loaded.
+In a similar manner, ensure that the appropriate font-variant is being loaded if it is to be used. The faux-bold, italic, and small-caps effects that the browser applies are sub-par.
+```
+*/
 
 
 // Body text
