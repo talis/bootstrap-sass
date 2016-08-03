@@ -145,7 +145,17 @@ a.btn {
   @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
 }
 .btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  padding: $padding-xs-vertical $padding-xs-horizontal;
+  font-size: $font-size-base;
+  font-weight: bold;
+  line-height: 1.0769230769;
+  border-radius: $border-radius-small;
+  text-transform: uppercase;
+  vertical-align: baseline;
+
+  &.btn-primary {
+    border-width: 0;
+  }
 }
 
 

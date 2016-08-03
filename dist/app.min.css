@@ -2231,10 +2231,15 @@ a.btn.disabled, fieldset[disabled] a.btn {
   border-radius: 3px; }
 
 .btn-xs, .btn-group-xs > .btn {
-  padding: 1px 5px;
-  font-size: 11px;
-  line-height: 1.5;
-  border-radius: 3px; }
+  padding: 0.15385em 0.30769em;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.0769230769;
+  border-radius: 3px;
+  text-transform: uppercase;
+  vertical-align: baseline; }
+  .btn-xs.btn-primary, .btn-group-xs > .btn-primary.btn {
+    border-width: 0; }
 
 .btn-block {
   display: block;
