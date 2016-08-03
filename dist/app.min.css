@@ -2213,7 +2213,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     text-decoration: none; }
   .open > .btn-link.dropdown-toggle {
     color: #003c40;
-    background-color: transparent; }
+    background-color: #e6e6e6; }
     .open > .btn-link.dropdown-toggle:focus, .open > .btn-link.dropdown-toggle.focus {
       background-color: #e6e6e6;
       border-color: #e6e6e6; }
@@ -3469,6 +3469,8 @@ a.label:hover, a.label:focus {
     .well .input-group-btn > .btn:active, .well .input-group-btn > .btn:focus {
       background-color: #ebebeb;
       border-color: #ebebeb; }
+  .open > .well.dropdown-toggle {
+    background-color: #fafafa; }
   .well .btn-default:active, .well .btn-default:focus,
   .well .btn-success:active,
   .well .btn-success:focus,

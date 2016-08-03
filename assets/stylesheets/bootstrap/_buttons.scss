@@ -123,7 +123,7 @@ a.btn {
   }
   .open > &.dropdown-toggle {
     color: darken(saturate(adjust-hue($link-hover-color, -0.2776), 1.4706), 7.0588);
-    background-color: darken(saturate(adjust-hue(transparent, 0.0000), 0.0000), 7.8431);
+    background-color: #e6e6e6;
     &:focus,
     &.focus {
       background-color: #e6e6e6;
