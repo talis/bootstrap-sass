@@ -217,6 +217,13 @@ input[type="search"] {
   margin-bottom: $form-group-margin-bottom;
 }
 
+.form-actions {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ebebeb;
+}
+
 
 // Checkboxes and radios
 //
