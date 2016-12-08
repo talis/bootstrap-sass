@@ -152,7 +152,7 @@ output {
 
   &[disabled],
   fieldset[disabled] & {
-    color: $grey;
+    color: $gray;
     cursor: $cursor-disabled;
   }
 
