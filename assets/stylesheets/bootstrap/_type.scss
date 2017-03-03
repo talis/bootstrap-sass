@@ -2,7 +2,12 @@
 // Typography
 // --------------------------------------------------
 
-
+/**
+ * Converts a pixel-based value to ems
+ * @param  $pixels   Desired font-size, in pixels
+ * @param  $context: $browser-context The context in which the size is to be calculated
+ * @return           A unit in ems
+ */
 @function em($pixels, $context: $browser-context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
