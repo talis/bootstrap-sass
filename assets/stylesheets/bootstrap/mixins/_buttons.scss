@@ -82,7 +82,7 @@
     &:hover,
     &:focus,
     &.focus {
-      background-color: $background;
+      background-color: desaturate($background, 50%);
           border-color: $border;
           color: $color;
     }
