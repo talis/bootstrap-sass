@@ -17,6 +17,8 @@ $gray-light:             lighten($gray-base, 55%) !default; // #8c8c8c
 $gray-lighter:           lighten($gray-base, 92%) !default; // #ebebeb
 $gray-superlight:        lighten($gray-base, 98%) !default; // #f9f9f9
 
+$gray300: lighten($gray-base, 30%) !default;
+
 $turqoise: #017d87;
 $accent: darken(saturate(adjust-hue($turqoise, -0.2776), 1.4706), 7.0588); // #005d64
 $pink: #c5197d;
