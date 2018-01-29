@@ -220,13 +220,10 @@ input[type="search"] {
 .form-actions {
   margin-left: 0;
   margin-right: 0;
-  padding: 12px;
+  padding-top: $padding-base-vertical;
+  padding-bottom: $padding-base-vertical;
   background-color: $gray100;
   border-top: 1px solid $gray200;
-
-  > [class*="col"] {
-    padding-left: 0;
-  }
 }
 
 
