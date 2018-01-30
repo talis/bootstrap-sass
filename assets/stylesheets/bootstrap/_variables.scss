@@ -101,7 +101,7 @@ $headings-font-family:    inherit !default;
 $headings-font-weight:    300 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          $gray600 !default;
-$headings-alt-color:      $gray900 !default;
+$headings-alt-color:      $black !default;
 
 
 //== Iconography
@@ -184,27 +184,27 @@ $table-header-color:            $black !default;
 $btn-font-weight:                normal !default;
 
 $btn-default-color:              $brand-primary !default;
-$btn-default-bg:                 #fff !default;
+$btn-default-bg:                 $white !default;
 $btn-default-border:             $gray200 !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $brand-primary !default;
 
-$btn-success-color:              #fff !default;
+$btn-success-color:              $white !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
-$btn-info-color:                 #fff !default;
+$btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $brand-info !default;
 
-$btn-warning-color:              #fff !default;
+$btn-warning-color:              $white !default;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             $btn-warning-bg !default;
 
 $btn-danger-color:               $brand-danger !default;
-$btn-danger-bg:                  #fff !default;
+$btn-danger-bg:                  $white !default;
 $btn-danger-border:              $misty !default;
 
 $btn-link-disabled-color:        $gray !default;
@@ -254,7 +254,7 @@ $input-height-small:             (floor($font-size-small * $line-height-small) +
 //** `.form-group` margin
 $form-group-margin-bottom:       15px !default;
 
-$legend-color:                   $gray900 !default;
+$legend-color:                   $black !default;
 $legend-border-color:            #e5e5e5 !default;
 
 
@@ -533,7 +533,7 @@ $state-success-text:             #155724 !default;
 $state-success-bg:               lighten(desaturate(adjust-hue($green, 1.2632), 9.6531), 53.7255) !default;
 $state-success-border:           $state-success-text !default;
 
-$state-info-text:                $gray900 !default;
+$state-info-text:                $black !default;
 $state-info-bg:                  $gray100 !default;
 $state-info-border:              $gray700 !default;
 
@@ -659,7 +659,7 @@ $modal-sm:                    300px !default;
 $alert-padding:               15px !default;
 $alert-border-radius:         0 !default;
 $alert-link-font-weight:      bold !default;
-$alert-default-text:          $gray900;
+$alert-default-text:          $black;
 
 $alert-success-border:        $state-success-border !default;
 $alert-success-bg:            $state-success-bg !default;
@@ -814,7 +814,7 @@ $text-muted:                  $gray-light !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color
-$headings-small-color:        $gray-light !default;
+$headings-small-color:        $gray600 !default;
 //** Blockquote small color
 $blockquote-small-color:      $gray-light !default;
 //** Blockquote font size
