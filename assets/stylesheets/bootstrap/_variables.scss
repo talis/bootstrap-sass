@@ -461,22 +461,22 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          $padding-base-vertical $padding-base-horizontal !default;
-$nav-link-hover-bg:                         $gray-superlight !default;
-$nav-link-down-bg:                          $misty !default;
+$nav-link-hover-bg:                         $gray100 !default;
+$nav-link-down-bg:                          $gray200 !default;
 
 $nav-disabled-link-color:                   $gray700 !default;
 $nav-disabled-link-hover-color:             $gray700 !default;
 
 //== Tabs
-$nav-tabs-border-color:                     $gray-lighter !default;
+$nav-tabs-border-color:                     $gray200 !default;
 
-$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+$nav-tabs-link-hover-border-color:          $gray200 !default;
 
 $nav-tabs-active-link-hover-bg:             $body-bg !default;
 $nav-tabs-active-link-hover-color:          $gray !default;
-$nav-tabs-active-link-hover-border-color:   $gray-lighter !default;
+$nav-tabs-active-link-hover-border-color:   $gray200 !default;
 
-$nav-tabs-justified-link-border-color:            $gray-lighter !default;
+$nav-tabs-justified-link-border-color:            $gray200 !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 //== Pills

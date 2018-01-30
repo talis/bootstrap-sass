@@ -152,6 +152,8 @@ output {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
+    background-color: $input-bg-disabled;
+    border-color: $input-bg-disabled;
     color: $gray;
     cursor: $cursor-disabled;
   }
@@ -632,5 +634,60 @@ input[type="checkbox"] {
         font-size: $font-size-small;
       }
     }
+  }
+}
+
+// Select
+//
+// Replaces the browser default select with a custom one, mostly pulled from
+// http://primercss.io.
+//
+
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 1.6;
+  color: $gray700;
+  vertical-align: middle;
+  background: $white url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+  background-size: 8px 10px;
+  border: 1px solid $input-border;
+  border-radius: $input-border-radius;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:focus {
+    border-color: $input-border-focus;
+    outline: 0;
+
+    &::-ms-value {
+      // For visual consistency with other platforms/browsers,
+      // suppress the default white text on blue background highlight given to
+      // the selected option text when the (still closed) <select> receives focus
+      // in IE and (under certain conditions) Edge.
+      // See https://github.com/twbs/bootstrap/issues/19398.
+      color: $input-color;
+      background-color: $input-bg;
+    }
+  }
+
+  &[multiple],
+  &[size]:not([size="1"]) {
+    height: auto;
+    padding-right: 1.75rem;
+    background-image: none;
+  }
+
+  &:disabled {
+    color: $input-color;
+    background-color: $input-bg-disabled;
+  }
+
+  // Hides the default caret in IE11
+  &::-ms-expand {
+    opacity: 0;
   }
 }
