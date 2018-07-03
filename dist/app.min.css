@@ -4006,8 +4006,8 @@ a.label:hover, a.label:focus {
   border-color: #fdb515; }
 
 .c-tip--onboarding .c-tip__icon {
-  margin-right: 0.5em;
-  font-size: 2em;
+  margin-right: 0.25em;
+  font-size: 3em;
   color: #fdb515; }
 
 .c-tip__title {
@@ -4015,7 +4015,7 @@ a.label:hover, a.label:focus {
   font-weight: 600; }
 
 .c-tip__content {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0; }
 
 .modal-open {
   overflow: hidden; }
