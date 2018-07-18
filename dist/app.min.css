@@ -2458,7 +2458,7 @@ tbody.collapse.in {
   .dropdown-menu > li > button {
     touch-action: manipulation;
     width: 100%;
-    padding: 2px 11px;
+    padding: 2px 20px;
     font-weight: normal;
     text-align: left;
     color: #017d87;
