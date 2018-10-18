@@ -36,7 +36,9 @@
     "needs": "^0.7.1"
   },
   "scripts": {
-    "build": "./node_modules/node-sass/bin/node-sass app.scss dist/app.min.css --style compressed",
+    "build-compressed": "./node_modules/node-sass/bin/node-sass app.scss dist/app.min.css --style compressed",
+    "build-uncompressed": "./node_modules/node-sass/bin/node-sass app.scss dist/app.css",
+    "build": "npm run build-compressed && npm run build-uncompressed",
     "serve": "http-server",
     "watch": "./node_modules/node-sass/bin/node-sass --watch app.scss dist/app.min.css --style compressed"
   }
