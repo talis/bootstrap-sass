@@ -11,7 +11,7 @@
     color: darken($text-color, 10%);
   }
   a {
-    color: $text-color;
+    color: $text-color !important;
     text-decoration: underline;
   }
 }
