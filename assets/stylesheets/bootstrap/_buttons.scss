@@ -96,8 +96,8 @@ a.btn {
 
 // Make a button look and behave like a link
 .btn-link {
-  font-weight: 400;
   color: $link-color;
+  border-color: transparent;
   font-weight: 600;
 
   &,
