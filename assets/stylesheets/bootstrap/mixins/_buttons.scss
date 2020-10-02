@@ -199,6 +199,10 @@
     background-image: none;
   }
 
+  &:hover:active {
+    background-color: $black;
+  }
+
   &.disabled,
   &[disabled],
   fieldset[disabled] {
