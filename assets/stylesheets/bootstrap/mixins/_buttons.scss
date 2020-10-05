@@ -18,7 +18,7 @@
     color: darken(saturate(adjust-hue($color, -0.2776), 1.4706), 7.0588);
     background-color: $background;
     border-color: currentColor;
-    box-shadow: 0px 0px 0px 1px $color;
+    box-shadow: 0px 0px 0px 1px currentColor;
   }
 
   &:focus:hover {
@@ -35,7 +35,7 @@
     &:focus,
     &.focus {
       background-color: #E9ECEF;
-      box-shadow: 0px 0px 0px 1px $color;
+      box-shadow: 0px 0px 0px 1px currentColor;
     }
   }
 
