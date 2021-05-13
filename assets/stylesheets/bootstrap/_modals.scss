@@ -151,3 +151,19 @@
 @media (min-width: $screen-md-min) {
   .modal-lg { width: $modal-lg; }
 }
+
+.o-modal-header {
+  margin-top: 1rem;
+  padding: $modal-title-padding;
+  border-bottom-width: 0;
+  text-align: center;
+
+  @include clearfix;
+}
+
+.o-modal-title {
+  margin: 0;
+  font-size: 2.3076923077rem;
+  line-height: 1.6;
+  color: $black;
+}

@@ -4565,6 +4565,23 @@ a.label:hover, a.label:focus {
   .modal-lg {
     width: 900px; } }
 
+.o-modal-header {
+  margin-top: 1rem;
+  padding: 15px;
+  border-bottom-width: 0;
+  text-align: center; }
+  .o-modal-header:before, .o-modal-header:after {
+    display: table;
+    content: " "; }
+  .o-modal-header:after {
+    clear: both; }
+
+.o-modal-title {
+  margin: 0;
+  font-size: 2.3076923077rem;
+  line-height: 1.6;
+  color: #000000; }
+
 .popover {
   position: absolute;
   top: 0;
