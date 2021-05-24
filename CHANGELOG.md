@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.10](https://github.com/talis/bootstrap-sass/compare/v3.7.9...v3.7.10) (2021-05-24)
+
+
+### Bug Fixes
+
+* lighten `.dropdown-header` font-weight ([cf3ff63](https://github.com/talis/bootstrap-sass/commit/cf3ff63496cf995201d5eeba31a3e80991923f63))
+* provide update modal-styles ([f8f9c28](https://github.com/talis/bootstrap-sass/commit/f8f9c28256e40aa5e86d678637dd37fbec2ea989))
+
 ### [3.7.9](https://github.com/talis/bootstrap-sass/compare/v3.7.8...v3.7.9) (2021-01-18)
 
 
