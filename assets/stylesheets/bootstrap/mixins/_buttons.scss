@@ -3,6 +3,8 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
+$btn-disabled-color: #69727F;
+
 @mixin button-variant-plain($color, $background) {
   color: $color;
   background-color: $background;
@@ -49,8 +51,8 @@
   &[disabled],
   fieldset[disabled] {
     background-color: $white;
-    border-color: #ADB5BD;
-    color: #ADB5BD;
+    border-color: $btn-disabled-color;
+    color: $btn-disabled-color;
   }
 
   &.disabled,
@@ -60,8 +62,8 @@
     &:focus,
     &.focus {
       background-color: $white;
-      border-color: #ADB5BD;
-      color: #ADB5BD;
+      border-color: $btn-disabled-color;
+      color: $btn-disabled-color;
       box-shadow: none;
     }
   }
@@ -112,8 +114,8 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] {
-    background-color: #ADB5BD;
-    border-color: #ADB5BD;
+    background-color: $btn-disabled-color;
+    border-color: $btn-disabled-color;
     color: $white;
     box-shadow: none;
   }
@@ -127,8 +129,8 @@
     &:hover,
     &:focus,
     &.focus {
-      background-color: #ADB5BD;
-      border-color: #ADB5BD;
+      background-color: $btn-disabled-color;
+      border-color: $btn-disabled-color;
       color: $white;
       box-shadow: none;
     }
@@ -193,8 +195,8 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] {
-    background-color: #ADB5BD;
-    border-color: #ADB5BD;
+    background-color: $btn-disabled-color;
+    border-color: $btn-disabled-color;
     color: $white;
     box-shadow: none;
   }
@@ -208,8 +210,8 @@
     &:hover,
     &:focus,
     &.focus {
-      background-color: #ADB5BD;
-      border-color: #ADB5BD;
+      background-color: $btn-disabled-color;
+      border-color: $btn-disabled-color;
       color: $white;
       box-shadow: none;
     }
