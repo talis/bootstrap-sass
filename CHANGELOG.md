@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.11](https://github.com/talis/bootstrap-sass/compare/v3.7.10...v3.7.11) (2021-06-11)
+
+
+### Bug Fixes
+
+* update disabled btn state ([e30751e](https://github.com/talis/bootstrap-sass/commit/e30751ecae9fe244044d9c65d52f9e3f0c856f3e))
+
 ### [3.7.10](https://github.com/talis/bootstrap-sass/compare/v3.7.9...v3.7.10) (2021-05-24)
 
 
