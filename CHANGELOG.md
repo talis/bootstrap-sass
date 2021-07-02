@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.12](https://github.com/talis/bootstrap-sass/compare/v3.7.11...v3.7.12) (2021-07-02)
+
+
+### Bug Fixes
+
+* **forms:** update help-block appearance ([78c21d3](https://github.com/talis/bootstrap-sass/commit/78c21d3a87610269245f6a6e3f358171378febd5))
+
 ### [3.7.11](https://github.com/talis/bootstrap-sass/compare/v3.7.10...v3.7.11) (2021-06-11)
 
 
