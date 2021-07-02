@@ -46,7 +46,7 @@ FormValidator.prototype.showSummary = function() {
 }
 ,
 FormValidator.prototype.getSummaryHtml = function() {
-  var t = '<h3 class="h6 errorSummary-heading">There\'s a problem</h6>';
+  var t = '<h2 class="h5 errorSummary-heading">There\'s a problem</h2>';
   t += "<ul>";
   for (var e = 0, o = this.errors.length; e < o; e++) {
       var i = this.errors[e];
@@ -84,14 +84,14 @@ FormValidator.prototype.showInlineErrors = function() {
 ,
 
 FormValidator.prototype.showInlineError = function(t) {
-  var e = '<span class="field-error text-danger"><i class="fas fa-exclamation-triangle"></i> ' + FormValidator.escapeHtml(t.message) + "</span>"
+  var e = '<span class="field-error"> ' + FormValidator.escapeHtml(t.message) + "</span>"
     , o = $("#" + t.fieldName)
     , i = o.parents(".field")
     , n = i.find("label")
     , s = i.find("legend");
   i.find(".field-error").remove(),
   s.length ? (s.append(e),
-  i.attr("aria-invalid", "true")) : (n.append(e),
+  i.attr("aria-invalid", "true")) : (i.append(e),
   o.attr("aria-invalid", "true"))
 }
 ,
@@ -154,3 +154,11 @@ validator.addValidator("password", [
     message: "Your password must contain at least 8 characters",
   },
 ]);
+validator.addValidator('personal-details', [
+  {
+    method: function (field) {
+      return field.checked === true;
+    },
+    message: "You must waive your rights.",
+  }
+])

@@ -28,22 +28,6 @@
     ></script>
     <script defer src="FormValidator.js"></script>
     <title>Exemplar Form</title>
-    <style>
-      .field-label {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .field-hint {
-        font-style: italic;
-        font-size: 12px;
-        margin-bottom: 5px;
-      }
-
-      .field-error {
-        display: block;
-      }
-    </style>
   </head>
   <body>
     <main class="container">
@@ -51,54 +35,47 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Form</h2>
-          <form id="registration" novalidate>
-            <div class="alert alert-info">
-              All fields are required, unless marked optional
-            </div>
+          <form id="registration" novalidate class="needs-validation">
 
-            <!-- <div tabindex="-1" role="group" id="errorSummary" class="alert alert-danger errorSummary" aria-labelledby="errorSummary-heading">
-            <h3 class="h6" id="errorSummary-heading">There's a problem</h3>
-            <ul>
-              <li><a href="#email">Enter your email address</a></li>
-              <li><a href="#password">Enter your password</a></li>
-            </ul>
-          </div> -->
+          <div tabindex="-1" role="group" id="errorSummary" class="alert alert-danger errorSummary hidden"></div>
 
-          <div tabindex="-1" role="group" id="errorSummary" class="alert alert-danger errorSummary hidden" >
-
+          <div class="help-block">
+            Enter your name to help complete this form
           </div>
 
+          <fieldset>
+            <legend>Your details</legend>
+
             <div class="form-group field">
-              <label for="name">Name</label>
+              <label for="name">
+                <span class="field-label">Name <span class="field-required">(Required)</span></span>
+                <span class="field-hint">Sort it out</span>
+              </label>
               <input
                 class="form-control"
                 type="text"
-                name=""
                 id="name"
-                aria-required="true"
                 autocomplete="given-name"
+                required
               />
             </div>
 
             <div class="form-group field">
               <label for="email">
-                <span class="field-label">Email</span>
-                <span class="field-hint">A valid email address</span>
+                <span class="field-label">Email <span class="field-required">(Required)</span></span>
               </label>
               <input
                 class="form-control"
                 type="email"
-                name=""
                 id="email"
                 autocomplete="email"
-                aria-required="true"
+                required
               />
             </div>
 
             <div class="form-group field">
               <label for="email">
                 <span class="field-label">Password</span>
-                <span class="field-hint">A valid email address</span>
               </label>
               <input
                 class="form-control"
@@ -106,9 +83,17 @@
                 name=""
                 id="password"
                 autocomplete="current-password"
-                aria-required="true"
               />
             </div>
+          </fieldset>
+
+          <div class="form-group field">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="personal-details" required>
+              <label class="custom-control-label" for="personal-details">I hereby agree to give away all my personal details, in perpetuity.</label>
+            </div>
+          </div>
+
 
             <div class="controls">
               <button type="submit" class="btn btn-primary">Login</button>
@@ -130,4 +115,20 @@
       </div>
     </main>
   </body>
+<script>
+  var forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+</script>
 </html>
