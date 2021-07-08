@@ -28,19 +28,18 @@
   "devDependencies": {
     "ejs": "~2.4.2",
     "es-dev-server": "^1.57.1",
-    "mincer": "~1.4.0",
-    "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
-    "standard-version": "^8.0.2"
+    "sass": "^1.35.2",
+    "standard-version": "^9.3.0"
   },
   "scripts": {
     "build:scripts": "",
-    "build:styles:compressed": "npx node-sass app.scss dist/app.min.css --output-style compressed --source-map true",
-    "build:styles:uncompressed": "npx node-sass app.scss dist/app.css --source-map true",
+    "build:styles:compressed": "npx sass app.scss dist/app.min.css --style=compressed",
+    "build:styles:uncompressed": "npx sass app.scss dist/app.css",
     "build": "npm run build:styles:compressed && npm run build:styles:uncompressed",
     "serve": "es-dev-server --watch --app-index index.html",
     "start": "run-p watch serve",
-    "watch": "npx node-sass --watch app.scss dist/app.css --source-map true",
+    "watch": "npx sass --watch app.scss dist/app.css",
     "prerelease": "npm run build",
     "release": "git add dist/ && standard-version -a"
   }
