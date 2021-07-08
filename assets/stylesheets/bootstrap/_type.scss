@@ -8,6 +8,8 @@
  * @param  $context: $browser-context The context in which the size is to be calculated
  * @return           A unit in ems
  */
+@use "sass:math";
+
 @function em($pixels, $context: $browser-context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
@@ -17,7 +19,7 @@
     $context: $context * 1px;
   }
 
-  @return $pixels / $context * 1em;
+  @return math.div($pixels, $context) * 1em;
 }
 
 
@@ -43,7 +45,7 @@ h1, .h1, .alpha,
 h2, .h2, .beta,
 h3, .h3, .gamma {
   margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed * 0.5);
 
   small,
   .small {
@@ -53,8 +55,8 @@ h3, .h3, .gamma {
 h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6, .zeta {
-  margin-top: ($line-height-computed / 2);
-  margin-bottom: ($line-height-computed / 2);
+  margin-top: ($line-height-computed * 0.5);
+  margin-bottom: ($line-height-computed * 0.5);
 
   small,
   .small {
@@ -133,7 +135,7 @@ h6, .h6, .zeta {
 // -------------------------
 
 p {
-  margin: 0 0 ($line-height-computed / 2);
+  margin: 0 0 ($line-height-computed * 0.5);
 }
 
 .lead {
@@ -154,7 +156,7 @@ p {
 // Ex: (12px small font / 14px base font) * 100% = about 85%
 small,
 .small {
-  font-size: floor((100% * $font-size-small / $font-size-base));
+  font-size: floor(math.div(100% * $font-size-small, $font-size-base));
 }
 
 mark,
@@ -213,7 +215,7 @@ mark,
 // -------------------------
 
 .page-header {
-  padding-bottom: (($line-height-computed / 2) - 1);
+  padding-bottom: (($line-height-computed * 0.5) - 1);
   margin: ($line-height-computed * 2) 0 $line-height-computed;
   border-bottom: 1px solid $page-header-border-color;
 }
@@ -226,7 +228,7 @@ mark,
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed * 0.5);
   ul,
   ol {
     margin-bottom: 0;
@@ -316,7 +318,7 @@ abbr[data-original-title] {
 
 // Blockquotes
 blockquote {
-  padding: ($line-height-computed / 2) $line-height-computed;
+  padding: ($line-height-computed * 0.5) $line-height-computed;
   margin: 0 0 $line-height-computed;
   font-size: $blockquote-font-size;
   border-left: 5px solid $blockquote-border-color;

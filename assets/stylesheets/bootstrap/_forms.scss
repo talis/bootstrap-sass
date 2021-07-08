@@ -484,8 +484,8 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 
 .help-block {
   display: block; // account for any element using help-block
-  padding: $alert-padding/4 $alert-padding;
-  margin-bottom: $line-height-computed / 4;
+  padding: $alert-padding*0.25 $alert-padding;
+  margin-bottom: $line-height-computed * 0.25;
   border-left: 3px solid $brand-primary;
   color: $black;
 }
@@ -503,7 +503,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 }
 
 .form-control + .field-error {
-  margin-top: $form-group-margin-bottom / 2;
+  margin-top: $form-group-margin-bottom * 0.5;
 }
 
 
@@ -647,7 +647,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
-    right: floor(($grid-gutter-width / 2));
+    right: floor(($grid-gutter-width * 0.5));
   }
 
   // Form group sizes
