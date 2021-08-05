@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.13](https://github.com/talis/bootstrap-sass/compare/v3.7.12...v3.7.13) (2021-08-05)
+
 ### [3.7.12](https://github.com/talis/bootstrap-sass/compare/v3.7.11...v3.7.12) (2021-07-02)
 
 
