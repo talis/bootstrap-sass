@@ -500,6 +500,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 .field-error {
   @extend .help-block;
   border-left-color: $alert-danger-border;
+  color: $red;
 }
 
 .form-control + .field-error {
