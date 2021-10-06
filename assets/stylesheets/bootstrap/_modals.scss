@@ -1,3 +1,4 @@
+@use "sass:math";
 //
 // Modals
 // --------------------------------------------------
@@ -166,4 +167,52 @@
   font-size: 2.3076923077rem;
   line-height: 1.6;
   color: $black;
+}
+
+.o-confirmation-modal {
+  .modal-dialog {
+    max-width: 32.3076923077rem;
+  }
+
+  .modal-image {
+    margin: $modal-inner-padding $modal-inner-padding 0;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .modal-body {
+    position: relative;
+    // Enable `flex-grow: 1` so that the body take up as much space as possible
+    // when there should be a fixed height on `.modal-dialog`.
+    flex: 1 1 auto;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: math.div($modal-inner-padding, 2);
+    border-radius: 0.6153846154rem;
+    font-size: 1.2307692308rem;
+  }
+
+  .modal-title {
+    font-size: 2.3076923077rem;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center; // vertically center
+    justify-content: flex-start;
+    background-color: transparent;
+    border-color: transparent;
+  }
 }

@@ -885,6 +885,7 @@
             Show classic modal
           </button>
           <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#modal-alt">Show new modal</button>
+          <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#confirmation-modal">Show confirmation modal</button>
         </div>
       </div>
     </section>
@@ -919,7 +920,7 @@
         <h2>Details/Summary </h2>
         <details>
           <summary>Details</summary>
-          
+
           <div class="col-md-6">
             <div class="form-group">
               <label for="details-input">A six col input</label>
@@ -976,6 +977,33 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+    <div class="modal o-confirmation-modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="confirmation-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="assets/images/discard.svg" class="modal-image" alt="" width="149" height="158" />
+          <div class="modal-header">
+            <h2 class="modal-title" id="confirmation-label">Are you sure?</h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              You will lose your unsaved data.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal">
+              Yes
+            </button>
+            <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
   </main>
 </body>
 <div

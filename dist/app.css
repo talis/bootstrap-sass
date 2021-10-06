@@ -5683,6 +5683,44 @@ fieldset[disabled] .well .btn-danger.focus {
   color: #000000;
 }
 
+.o-confirmation-modal .modal-dialog {
+  max-width: 32.3076923077rem;
+}
+.o-confirmation-modal .modal-image {
+  margin: 15px 15px 0;
+}
+.o-confirmation-modal .modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.o-confirmation-modal .modal-body {
+  position: relative;
+  flex: 1 1 auto;
+}
+.o-confirmation-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 7.5px;
+  border-radius: 0.6153846154rem;
+  font-size: 1.2307692308rem;
+}
+.o-confirmation-modal .modal-title {
+  font-size: 2.3076923077rem;
+}
+.o-confirmation-modal .modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .popover {
   position: absolute;
   top: 0;
