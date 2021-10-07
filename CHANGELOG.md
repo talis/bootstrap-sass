@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.9.0](https://github.com/talis/bootstrap-sass/compare/v3.8.0...v3.9.0) (2021-10-07)
+
+
+### Features
+
+* add listbox styles ([72ebb18](https://github.com/talis/bootstrap-sass/commit/72ebb180cef7a064cfeb867c0c81cb678effbfd0))
+
 ## [3.8.0](https://github.com/talis/bootstrap-sass/compare/v3.7.13...v3.8.0) (2021-10-06)
 
 
