@@ -208,10 +208,12 @@
     </main>
     <script>
       window.addEventListener("load", function () {
-  const button = document.getElementById("listbox-button");
-  const exListbox = new Listbox(document.querySelector('[role="listbox"]'));
-  const listboxButton = new ListboxButton(button, exListbox);
-});
+        const button = document.getElementById("listbox-button");
+        const listbox = new Listbox(
+          document.querySelector('[role="listbox"]')
+        );
+        const listboxButton = new ListboxButton(button, listbox);
+      });
     </script>
   </body>
 </html>
