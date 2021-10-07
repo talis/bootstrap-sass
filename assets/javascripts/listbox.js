@@ -20,10 +20,6 @@ class Listbox {
     this.listboxNode = listboxNode;
 
     this.activeDescendant = this.listboxNode.getAttribute('aria-activedescendant');
-    this.siblingList = null;
-    this.upButton = null;
-    this.downButton = null;
-    this.moveButton = null;
     this.keysSoFar = '';
     this.handleFocusChange = function () {};
     this.handleItemChange = function (event, items) {};
@@ -121,7 +117,6 @@ class Listbox {
         break;
       case KeyCode.SPACE:
         evt.preventDefault();
-        this.toggleSelectItem(nextItem);
         break;
       case KeyCode.BACKSPACE:
       case KeyCode.DELETE:
@@ -230,25 +225,6 @@ class Listbox {
   checkClickItem(evt) {
     if (evt.target.getAttribute('role') === 'option') {
       this.focusItem(evt.target);
-      this.toggleSelectItem(evt.target);
-    }
-  }
-
-  toggleSelectItem(element) {
-    if (this.multiselectable) {
-      element.setAttribute(
-        'aria-selected',
-        element.getAttribute('aria-selected') === 'true' ? 'false' : 'true'
-      );
-
-      if (this.moveButton) {
-        if (this.listboxNode.querySelector('[aria-selected="true"]')) {
-          this.moveButton.setAttribute('aria-disabled', 'false');
-        }
-        else {
-          this.moveButton.setAttribute('aria-disabled', 'true');
-        }
-      }
     }
   }
 
