@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy Listbox | Talis</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/app.css" />
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="assets/javascripts/bootstrap.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="assets/javascripts/utils.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="assets/javascripts/listbox.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="assets/javascripts/listbox-collapsible.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c1ea91fe27.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <a class="sr-only sr-only-focusable c-skip-link" href="#main-content"
+        >Skip to main content</a
+      >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/bootstrap-sass">
+            <img
+              src="assets/images/logo.svg"
+              alt="Talis"
+              width="75"
+              height="30"
+            />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#"
+                >Link
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+              <a href="error.html">View error page</a>
+            </li>
+            <li>
+              <a href="form.html">Example form</a>
+            </li>
+            <li>
+              <a href="fancy-listbox.html">Listbox</a>
+            </li>
+            <li class="dropdown">
+              <button
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="menu"
+                aria-expanded="false"
+              >
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="js-loader-toggle" type="button">
+                View loader
+              </button>
+            </li>
+            <li class="dropdown">
+              <button
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User Name
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <main class="container-fluid" id="main-content">
+      <section class="page-header">
+        <h1>Listbox Example</h1>
+      </section>
+
+      <style>
+        [role="option"] {
+          display: block;
+          padding: 12px;
+          position: relative;
+          line-height: 1.6;
+          color: #017d87;
+          white-space: nowrap;
+          border-bottom: 1px solid #e9ecef;
+        }
+
+        [role="option"]:last-child {
+          border-bottom: none;
+        }
+
+        [role="option"] {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        [role="option"] > i {
+          margin-right: 1rem;
+        }
+
+        [role="option"]:hover {
+          background: #017d87;
+          color: white;
+        }
+
+        [role="option"].focused {
+          background: #017d87;
+          color: white;
+        }
+
+        [role="option"][aria-selected="true"] {
+          background-color: #017d87;
+          color: white;
+        }
+
+        .c-fancy-listbox {
+          position: relative;
+          display: block;
+          vertical-align: middle;
+        }
+
+        .c-fancy-listbox__toggle {
+          position: relative;
+          display: flex;
+          padding: 12px;
+          justify-content: space-between;
+          align-items: center;
+          text-align: left;
+          transition: none;
+        }
+
+        .c-fancy-listbox__toggle.c-fancy-listbox__toggle[aria-expanded="true"] {
+          background-color: white;
+          color: #017d87;
+          transition: none;
+        }
+
+        .c-fancy-listbox__toggle__value {
+          display: flex;
+          align-items: center;
+        }
+
+        .c-fancy-listbox__toggle__value > i {
+          font-size: 24px;
+          margin-right: 1rem;
+        }
+
+        .c-fancy-listbox__dropdown {
+          padding: 0;
+          width: 100%;
+          font-weight: 600;
+        }
+      </style>
+
+      <section class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label id="listbox-label">Select a resource type</label>
+            <div class="c-fancy-listbox js-listbox-wrapper">
+              <button
+                class="
+                  btn btn-primary btn-block
+                  dropdown-toggle
+                  c-fancy-listbox__toggle
+                  js-listbox-toggle
+                "
+                aria-haspopup="listbox"
+                aria-labelledby="listbox-label listbox-button"
+                id="listbox-button"
+                type="button"
+                data-toggle="dropdown"
+              >
+                <span class="c-fancy-listbox__toggle__value js-listbox-value">
+                  <i class="fal fa-book"></i>
+                  <span>Book</span>
+                </span>
+                <span class="caret"></span>
+              </button>
+              <ul
+                id="listbox-list"
+                tabindex="-1"
+                role="listbox"
+                aria-labelledby="listbox-label"
+                class="dropdown-menu c-fancy-listbox__dropdown"
+              >
+                <li id="listbox-resource-book" role="option">
+                  <i class="fal fa-book fa-2x"></i>
+                  <span>Book</span>
+                </li>
+                <li id="listbox-resource-article" role="option">
+                  <i class="fal fa-newspaper fa-2x"></i>
+                  <span>Journal article</span>
+                </li>
+                <li id="listbox-resource-score" role="option">
+                  <i class="fal fa-list-music fa-2x"></i>
+                  <span>Music score</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
