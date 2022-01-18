@@ -8,3 +8,36 @@
   -ms-user-select: text;      /* IE 10+ */
   user-select: text !important;
 }
+
+.px-3 {
+  padding-left: .9375rem !important;
+  padding-right: .9375rem !important;
+}
+
+.py-2 {
+  padding-top: .46875rem !important;
+  padding-bottom: .46875rem !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.text-truncate {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
