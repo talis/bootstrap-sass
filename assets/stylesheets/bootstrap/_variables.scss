@@ -92,6 +92,10 @@ $font-size-h6:            $font-size-base !default;
 $font-size-scale:         0.85;
 $browser-context: $font-size-base !default;
 
+$global-weight-light: 300 !default;
+$global-weight-normal: 400 !default;
+$global-weight-bold: 700 !default;
+
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.6 !default; // 20/13
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
@@ -848,3 +852,14 @@ $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray300 !default;
 $hr-border--well:             $gray400 !default;
+
+$toast-padding-x: 1.5em;
+$toast-padding-y: .75em;
+$toast-font-size: 1.09375rem;
+$toast-background-color: #a4d1ea;
+$toast-border-color:                rgba($black, .1) !default;
+$toast-color: $black;
+$toast-border-radius: 2rem;
+$toast-box-shadow: 0;
+$toast-border-width: 0;
+$toast-max-width: 100%;

@@ -1,0 +1,104 @@
+@use "sass:math";
+$grid-gutter-width:           1.5rem;
+$container-padding-x: $grid-gutter-width * .5;
+$toast-spacing:                     .75rem;
+
+
+.toast {
+  width: $toast-max-width;
+  max-width: 100%;
+  color: $toast-color;
+  pointer-events: auto;
+  background-color: $toast-background-color;
+  background-clip: padding-box;
+  border: $toast-border-width solid $toast-border-color;
+  box-shadow: $toast-box-shadow;
+  font-size: $font-size-large;
+  font-weight: $global-weight-light;
+  border-radius: 2em;
+
+  margin-bottom: $toast-spacing;
+
+  &-success {
+    background-color: #d0e6dd;
+  }
+
+  &-info {
+    background-color: #a4d1ea;
+  }
+
+  &-warning {
+    background-color: #fed989;
+  }
+
+  &-danger {
+    background-color: #f3d5d5;
+  }
+
+  .btn-close {
+    box-sizing: content-box;
+color: #000;
+border: 0;
+border-radius: 3px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    font-weight: 300;
+    text-decoration: underline;
+    background: transparent;
+    opacity: 1;
+    text-underline-offset: 1px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px currentColor;
+      outline: 0;
+    }
+  }
+
+  &.showing {
+    opacity: 0;
+  }
+
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.toast-container {
+  position: absolute;
+
+  width: max-content;
+  max-width: 100%;
+  pointer-events: none;
+
+  z-index: $zindex-popover;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+
+
+  > :not(:last-child) {
+    margin-bottom: $toast-spacing;
+  }
+}
+
+.toast-body {
+  padding: $toast-padding-x; // apply to both vertical and horizontal
+  word-wrap: break-word;
+}
+
+
+.toast > *:only-child {
+  display: flex;
+  align-items: center;
+  padding: $toast-padding-y $toast-padding-x;
+}
+
+.toast-body:not(:only-child) {
+  padding: 0 math.div($toast-padding-x, 2);
+}

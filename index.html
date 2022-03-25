@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kitchen Sink | Talis</title>
+  <title>Bootstrap v3 Kitchen Sink | Talis</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://kit.fontawesome.com/1f723026cf.js" crossorigin="anonymous"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/app.css">
   <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -940,6 +947,34 @@
       </div>
     </section>
 
+
+    <section class="row">
+      <div class="col-xs-12">
+        <button type="button" class="btn btn-primary btn-lg js-btn-toast">
+          Display a toast
+        </button>
+
+        <div style="position: relative;" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-container">
+            <div class="toast">
+              <div>
+                <i class="fal fa-spinner-third fa-spin fa-fw"></i>
+                <span class="toast-body">Hello, world! This is a toast message.</span>
+                <button type="button" class="btn-close" data-bs-dismiss="toast">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+            var toast = document.querySelector('.toast');
+
+          document.querySelector(".js-btn-toast").addEventListener("click", () => {
+            toast.classList.add('show')
+          });
+        </script>
+      </div>
+    </section>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
       <div class="modal-dialog">
