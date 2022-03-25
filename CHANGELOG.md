@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.11.0](https://github.com/talis/bootstrap-sass/compare/v3.10.0...v3.11.0) (2022-03-25)
+
+
+### Features
+
+* add toasts ([4c41249](https://github.com/talis/bootstrap-sass/commit/4c412499bc0d10ef0cbf770501c6ccb0365345cf))
+
 ## [3.10.0](https://github.com/talis/bootstrap-sass/compare/v3.9.1...v3.10.0) (2022-01-18)
 
 
