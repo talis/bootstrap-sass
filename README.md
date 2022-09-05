@@ -1,5 +1,7 @@
-# Deprecated
-## Bootstrap 3 for Sass
+# Bootstrap 3 for Sass
+
+> __Deprecation notice:__ <a href="https://github.com/talis/bootstrap-sass">Bootstrap-Sass</a> is now deprecated. No new functionality will be added. Use <a href="https://getbootstrap.com/docs/">Bootstrap v5</a> and <a href="https://github.com/talis/bootstrap-theme">our theme</a> for new projects.
+
 `bootstrap-sass` is a Sass-powered version of [Bootstrap](https://github.com/twbs/bootstrap) 3, ready to drop right into your Sass powered applications.
 
 
