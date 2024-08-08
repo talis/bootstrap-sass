@@ -4137,7 +4137,7 @@ tbody.collapse.in {
 .navbar-brand {
   float: left;
   height: 60px;
-  padding: 20px 15px;
+  padding: 10px 15px;
   font-size: 17.5px;
   line-height: 20px;
   text-decoration: none;
@@ -4189,7 +4189,7 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-  margin: 10px -15px;
+  margin: 5px -15px;
 }
 .navbar-nav > li > a,
 .navbar-nav > li > button {
@@ -4243,8 +4243,8 @@ tbody.collapse.in {
   }
   .navbar-nav > li > a,
 .navbar-nav > li > button {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
