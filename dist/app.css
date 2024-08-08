@@ -4418,8 +4418,8 @@ tbody.collapse.in {
   background-color: rgba(0, 0, 0, 0.25);
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-image: linear-gradient(0deg, #ffffff 4px, transparent 4px);
+  color: #1f1c3a;
+  background-image: linear-gradient(0deg, #1f1c3a 4px, transparent 4px);
 }
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
   color: #ccc;
@@ -4429,7 +4429,7 @@ tbody.collapse.in {
 .navbar-default .navbar-nav > .open > button,
 .navbar-default .navbar-nav > .open > button:hover,
 .navbar-default .navbar-nav > .open > button:focus {
-  color: #ffffff;
+  color: #1f1c3a;
   background-color: rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 767px) {
@@ -4447,7 +4447,7 @@ tbody.collapse.in {
 .navbar-default .navbar-nav .open .dropdown-menu > .active > button,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > button:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > button:focus {
-    color: #ffffff;
+    color: #1f1c3a;
     background-color: #1f1c3a;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus,
@@ -6432,7 +6432,7 @@ td.visible-print {
 }
 
 .t-error {
-  background-color: #00E1BB;
+  background-color: #ffffff;
   color: #1f1c3a;
 }
 .t-error hr {
