@@ -408,7 +408,7 @@ $navbar-height:                    60px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             0 !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width * 0.5)) !default;
-$navbar-padding-vertical:          (($navbar-height - $line-height-computed) * 0.25) !default;
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) * 0.5) !default;
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $white !default;
