@@ -568,12 +568,12 @@ mark,
 }
 
 .text-primary {
-  color: #00E1BB;
+  color: #1f1c3a;
 }
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #00ae91;
+  color: #0d0b18;
 }
 
 .text-success {
@@ -617,12 +617,12 @@ a.text-danger:focus {
 }
 
 .bg-primary {
-  background-color: #00E1BB;
+  background-color: #1f1c3a;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #00ae91;
+  background-color: #0d0b18;
 }
 
 .bg-success {
@@ -2514,7 +2514,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
   display: block;
   padding: 3.75px 15px;
   margin-bottom: 5px;
-  border-left: 3px solid #00E1BB;
+  border-left: 3px solid #1f1c3a;
   color: #000000;
 }
 
@@ -4865,8 +4865,8 @@ a.label:hover, a.label:focus {
 }
 
 .label-primary {
-  background-color: #00E1BB;
-  color: #000000;
+  background-color: #1f1c3a;
+  color: #ffffff;
 }
 
 .label-success {
@@ -5351,17 +5351,17 @@ fieldset[disabled] .well .btn-danger.focus {
   background-color: #343a40;
 }
 .panel-primary {
-  border-color: #00E1BB;
+  border-color: #1f1c3a;
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  border-color: #00E1BB;
+  border-color: #1f1c3a;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #00E1BB;
+  border-top-color: #1f1c3a;
 }
 .panel-primary > .panel-heading .badge {
-  color: #00E1BB;
+  color: #1f1c3a;
   background-color: #fff;
 }
 .panel-success {

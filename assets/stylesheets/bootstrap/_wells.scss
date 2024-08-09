@@ -64,7 +64,7 @@ $all-text-inputs: _assing-inputs($_text-inputs-list);
     border-color: $input-border;
 
     &:focus {
-      border-color: $brand-secondary;
+      border-color: $brand-primary;
     }
   }
   // #{$all-text-inputs} {

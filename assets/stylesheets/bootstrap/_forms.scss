@@ -102,7 +102,7 @@ input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   // @include tab-focus;
-  outline: 2px solid $brand-secondary;
+  outline: 2px solid $brand-primary;
   outline-offset: 2px;
 }
 
@@ -708,7 +708,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
-    box-shadow: 0 0 0 1px $brand-secondary;
+    box-shadow: 0 0 0 1px $brand-primary;
 }
 
 .custom-control-label:hover::before {
@@ -732,7 +732,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: $brand-secondary;
+    background-color: $brand-primary;
 }
 
 .custom-control-input:disabled~.custom-control-label {
@@ -740,7 +740,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 }
 
 .custom-control-input:checked~.custom-control-label::before {
-    color: $brand-secondary;
+    color: $brand-primary;
     background-color: $white;
 }
 
@@ -758,17 +758,17 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 .custom-checkbox {
   .custom-control-input:checked~.custom-control-label::before {
       background-color: $white;
-      box-shadow: 0 0 0 1px $brand-secondary;
+      box-shadow: 0 0 0 1px $brand-primary;
   }
 
   .custom-control-input:focus~.custom-control-label::before {
     background-color: $white;
-    box-shadow: 0 0 0 2px $brand-secondary;
+    box-shadow: 0 0 0 2px $brand-primary;
   }
 
   .custom-control-input:focus:checked~.custom-control-label::before {
     background-color: $white;
-    box-shadow: 0 0 0 2px $brand-secondary;
+    box-shadow: 0 0 0 2px $brand-primary;
   }
 
   .o-custom-control__input--pink:focus~.custom-control-label::before {
@@ -803,7 +803,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 }
 
   .custom-control-input:focus~.custom-control-label::after {
-    box-shadow: 0 0 0 2px $brand-secondary;
+    box-shadow: 0 0 0 2px $brand-primary;
     border-radius: 1rem;
   }
 
