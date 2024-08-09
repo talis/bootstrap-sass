@@ -731,7 +731,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 }
 
 .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
+    color: $white;
     background-color: $brand-primary;
 }
 

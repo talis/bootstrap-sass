@@ -1,10 +1,10 @@
 .c-skip-link:focus {
   position: absolute;
   background-color: #005d64;
-  color: #fff;
+  color: $white;
   font-weight: 600;
   padding: 1rem 2rem;
-  outline: 3px solid #fff;
+  outline: 3px solid $white;
   opacity: initial;
   text-decoration: underline;
   text-underline-position: under;
