@@ -155,7 +155,7 @@
 .navbar-brand {
   float: left;
   height: $navbar-height;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  padding: 15px $navbar-padding-horizontal 15px $navbar-padding-horizontal;
   font-size: $font-size-large;
   line-height: $line-height-computed;
 
