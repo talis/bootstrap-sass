@@ -6433,7 +6433,6 @@ td.visible-print {
 
 .t-error {
   background-color: #fffefb;
-  color: #000000;
 }
 .t-error hr {
   height: 1px;
@@ -6455,12 +6454,10 @@ td.visible-print {
 .c-error-page__header {
   font-size: 52px;
   font-weight: 700;
-  color: #000000;
 }
 
 .c-error-page__subheader {
   font-size: 39px;
-  color: #000000;
 }
 
 .c-error-page__context {
