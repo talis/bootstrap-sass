@@ -731,7 +731,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 }
 
 .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
+    color: $white;
     background-color: $brand-primary;
 }
 
@@ -756,7 +756,8 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
 }
 
 .custom-checkbox {
-  .custom-control-input:checked~.custom-control-label::before {      background-color: $white;
+  .custom-control-input:checked~.custom-control-label::before {
+      background-color: $white;
       box-shadow: 0 0 0 1px $brand-primary;
   }
 
@@ -783,7 +784,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
   }
 
   .custom-control-input:checked~.custom-control-label::after {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23017d87' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%231f1c3a' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
   }
 
   .o-custom-control__input--pink.custom-control-input:checked~.custom-control-label::after {
@@ -811,7 +812,7 @@ was-validated .input-group .form-control:invalid, .input-group .form-control.is-
   }
 
   .custom-control-input:checked~.custom-control-label::after {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23017d87'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%231f1c3a'/%3E%3C/svg%3E");
     background-size: 14px;
   }
 

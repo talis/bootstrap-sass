@@ -8,7 +8,7 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$white:                  #ffffff !default;
+$white:                  #fffefb !default;
 $gray-base:              #000000 !default;
 
 $gray100: #f8f9fa !default;
@@ -28,8 +28,8 @@ $gray:                   $gray700 !default;
 $gray-dark:              $gray800 !default;
 $gray-darker:            $gray900 !default;
 
-$turquoise: #017d87;
-$accent: #005d64;
+$turquoise: #00E1BB;
+$inquisitive-blue: #1f1c3a;
 $pink: #c5197d;
 $green: #25828d;
 $yellow: #FFC943;
@@ -42,7 +42,8 @@ $deathstar: $gray;
 $battleship: $gray-light;
 $misty: $gray-lighter;
 
-$brand-primary:         $turquoise !default;
+$brand-primary:         $inquisitive-blue !default;
+$brand-secondary:       $turquoise !default;
 $brand-success:         #77E0CE !default;
 $brand-info:            #4CC3D6 !default;
 $brand-warning:         #FFC943 !default;
@@ -54,14 +55,14 @@ $brand-danger:          #C42129 !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               $white !default;
 //** Global text color on `<body>`.
 $text-color:            $gray700 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $accent !default;
+$link-hover-color:      $brand-primary !default;
 //** Link hover decoration.
 $link-hover-decoration: none !default;
 
@@ -149,9 +150,9 @@ $border-radius-large:       5px !default;
 $border-radius-small:       3px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    #fff !default;
+$component-active-color:    $white !default;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $accent !default;
+$component-active-bg:       $brand-primary !default;
 
 //** Width of the `border` for generating carets that indicate dropdowns.
 $caret-width-base:          4px !default;
@@ -278,7 +279,7 @@ $cursor-disabled:                not-allowed !default;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg:                    #fff !default;
+$dropdown-bg:                    $white !default;
 //** Dropdown menu `border-color`.
 $dropdown-border:                rgba(0, 0, 0, .15) !default;
 //** Dropdown menu `border-color` **for IE8**.
@@ -289,9 +290,9 @@ $dropdown-divider-bg:            $misty !default;
 //** Dropdown link text color.
 $dropdown-link-color:            $brand-primary !default;
 //** Hover color for dropdown links.
-$dropdown-link-hover-color:      #fff !default;
+$dropdown-link-hover-color:      $white !default;
 //** Hover background for dropdown links.
-$dropdown-link-hover-bg:         $accent !default;
+$dropdown-link-hover-bg:         $brand-primary !default;
 
 //** Active dropdown menu item text color.
 $dropdown-link-active-color:     $component-active-color !default;
@@ -305,7 +306,7 @@ $dropdown-link-disabled-color:   $gray500 !default;
 $dropdown-header-color:          $gray700 !default;
 
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
-$dropdown-caret-color:           #fff !default;
+$dropdown-caret-color:           $white !default;
 
 
 //-- Z-index master list
@@ -411,15 +412,15 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) * 0
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $white !default;
-$navbar-default-bg:                $brand-primary !default;
-$navbar-default-border:            $accent !default;
+$navbar-default-bg:                $brand-secondary !default;
+$navbar-default-border:            $white !default;
 
 // Navbar links
-$navbar-default-link-color:                $white !default;
-$navbar-default-link-hover-color:          $white !default;
-$navbar-default-link-hover-bg:             $accent !default;
-$navbar-default-link-active-color:         $white !default;
-$navbar-default-link-active-bg:            $accent !default;
+$navbar-default-link-color:                $brand-primary !default;
+$navbar-default-link-hover-color:          $brand-primary !default;
+$navbar-default-link-hover-bg:             $brand-secondary !default;
+$navbar-default-link-active-color:         $brand-primary !default;
+$navbar-default-link-active-bg:            $brand-primary !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
@@ -429,9 +430,9 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           $accent !default;
+$navbar-default-toggle-hover-bg:           $brand-primary !default;
 $navbar-default-toggle-icon-bar-bg:        $white !default;
-$navbar-default-toggle-border-color:       $accent !default;
+$navbar-default-toggle-border-color:       $brand-primary !default;
 
 
 //=== Inverted navbar
@@ -442,7 +443,7 @@ $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !def
 
 // Inverted navbar links
 $navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
-$navbar-inverse-link-hover-color:           #fff !default;
+$navbar-inverse-link-hover-color:           $white !default;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
 $navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
@@ -451,12 +452,12 @@ $navbar-inverse-link-disabled-bg:           transparent !default;
 
 // Inverted navbar brand label
 $navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          #fff !default;
+$navbar-inverse-brand-hover-color:          $white !default;
 $navbar-inverse-brand-hover-bg:             transparent !default;
 
 // Inverted navbar toggle
 $navbar-inverse-toggle-hover-bg:            #333 !default;
-$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
+$navbar-inverse-toggle-icon-bar-bg:         $white !default;
 $navbar-inverse-toggle-border-color:        #333 !default;
 
 
@@ -496,7 +497,7 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //##
 
 $pagination-color:                     $link-color !default;
-$pagination-bg:                        #fff !default;
+$pagination-bg:                        $white !default;
 $pagination-border:                    $brand-primary !default;
 
 $pagination-hover-color:               $link-hover-color !default;
@@ -505,11 +506,11 @@ $pagination-down-bg:                   $gray200 !default;
 $pagination-hover-border:              $brand-primary !default;
 
 $pagination-active-color:              $brand-primary !default;
-$pagination-active-bg:                 #fff !default;
+$pagination-active-bg:                 $white !default;
 $pagination-active-border:             $brand-primary !default;
 
 $pagination-disabled-color:            #ADB5BD !default;
-$pagination-disabled-bg:               #fff !default;
+$pagination-disabled-bg:               $white !default;
 $pagination-disabled-border:           $gray400 !default;
 
 
@@ -558,7 +559,7 @@ $state-danger-border:            $red !default;
 //** Tooltip max width
 $tooltip-max-width:           200px !default;
 //** Tooltip text color
-$tooltip-color:               #fff !default;
+$tooltip-color:               $white !default;
 //** Tooltip background color
 $tooltip-bg:                  #000 !default;
 $tooltip-opacity:             .9 !default;
@@ -574,7 +575,7 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //##
 
 //** Popover body background color
-$popover-bg:                          #fff !default;
+$popover-bg:                          $white !default;
 //** Popover maximum width
 $popover-max-width:                   276px !default;
 //** Popover border color
@@ -616,9 +617,9 @@ $label-warning-bg:            $brand-warning !default;
 $label-danger-bg:             $brand-danger !default;
 
 //** Default label text color
-$label-color:                 #fff !default;
+$label-color:                 $white !default;
 //** Default text color of a linked label
-$label-link-hover-color:      #fff !default;
+$label-link-hover-color:      $white !default;
 
 $label-font-weight:           600 !default;
 
@@ -636,7 +637,7 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             #fff !default;
+$modal-content-bg:                             $white !default;
 //** Modal content border color
 $modal-content-border-color:                   rgba(0, 0, 0, .2) !default;
 //** Modal content border color **for IE8**
@@ -699,7 +700,7 @@ $panel-default-text:          $gray-dark !default;
 $panel-default-border:        $gray200 !default;
 $panel-default-heading-bg:    #fafafa !default;
 
-$panel-primary-text:          #fff !default;
+$panel-primary-text:          $white !default;
 $panel-primary-border:        $brand-primary !default;
 $panel-primary-heading-bg:    $brand-primary !default;
 
@@ -752,15 +753,15 @@ $well-border:                 $gray200 !default;
 //
 //##
 
-$badge-color:                 #fff !default;
+$badge-color:                 $white !default;
 //** Linked badge text color on hover
-$badge-link-hover-color:      #fff !default;
+$badge-link-hover-color:      $white !default;
 $badge-bg:                    $gray-light !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
-$badge-active-bg:             #fff !default;
+$badge-active-bg:             $white !default;
 
 $badge-font-weight:           600 !default;
 $badge-line-height:           1 !default;
@@ -789,15 +790,15 @@ $breadcrumb-separator:          "/" !default;
 
 $carousel-text-shadow:                        0 1px 2px rgba(0, 0, 0, .6) !default;
 
-$carousel-control-color:                      #fff !default;
+$carousel-control-color:                      $white !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 $carousel-control-font-size:                  20px !default;
 
-$carousel-indicator-active-bg:                #fff !default;
-$carousel-indicator-border-color:             #fff !default;
+$carousel-indicator-active-bg:                $white !default;
+$carousel-indicator-border-color:             $white !default;
 
-$carousel-caption-color:                      #fff !default;
+$carousel-caption-color:                      $white !default;
 
 
 //== Close
@@ -806,7 +807,7 @@ $carousel-caption-color:                      #fff !default;
 
 $close-font-weight:           bold !default;
 $close-color:                 #000 !default;
-$close-text-shadow:           0 1px 0 #fff !default;
+$close-text-shadow:           0 1px 0 $white !default;
 
 
 //== Code
@@ -816,7 +817,7 @@ $close-text-shadow:           0 1px 0 #fff !default;
 $code-color:                  #c7254e !default;
 $code-bg:                     #f9f2f4 !default;
 
-$kbd-color:                   #fff !default;
+$kbd-color:                   $white !default;
 $kbd-bg:                      #333 !default;
 
 $pre-bg:                      #f5f5f5 !default;
