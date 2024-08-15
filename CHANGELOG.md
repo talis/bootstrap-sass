@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.12.0](https://github.com/talis/bootstrap-sass/compare/v3.11.0...v3.12.0) (2024-08-15)
+
+### Features
+
+* Updated styles to use the new TfS branding colours ([[5c74c5d]](https://github.com/talis/bootstrap-sass/commit/5c74c5d1de1cf24154184c13ff6f6815507e1b5e))
+
 ## [3.11.0](https://github.com/talis/bootstrap-sass/compare/v3.10.0...v3.11.0) (2022-03-25)
 
 
