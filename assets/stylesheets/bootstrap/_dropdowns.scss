@@ -32,6 +32,7 @@
 }
 
 // The dropdown menu (ul)
+td ul.dropdown-menu,
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -65,10 +66,6 @@
     @include nav-divider($dropdown-divider-bg);
   }
 
-  a {
-    text-decoration: none;
-  }
-
   // Links within the dropdown menu
   > li > a {
     display: block;
@@ -78,7 +75,7 @@
     line-height: $line-height-base;
     color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
-    text-decoration: none;
+    text-decoration: underline;
   }
 
 
@@ -100,29 +97,20 @@
 
 
 // Hover/Focus state
+td ul.dropdown-menu > li > a,
+td ul.dropdown-menu > li > button,
 .dropdown-menu > li > a,
 .dropdown-menu > li > button {
   &:hover {
     text-decoration: none;
-    color: $dropdown-link-hover-bg;
-    background-color: $gray200;
+    color: $dropdown-link-hover-color;
   }
 
   &:focus {
     outline: 2px solid $dropdown-link-color;
     outline-offset: -2px;
-    color: $dropdown-link-hover-bg;
-    // border: 1px solid $dropdown-link-hover-bg;
-    // box-shadow: 0 0 0 1px inset $dropdown-link-hover-bg;
+    color: $dropdown-link-hover-color;
   }
-
-  // &:hover:focus,
-  // :active {
-  //   color: $dropdown-link-hover-bg;
-  //   background-color: $gray200;
-  //   border: 1px solid $dropdown-link-hover-bg;
-  //   box-shadow: 0 0 0 1px inset $dropdown-link-hover-bg;
-  // }
 }
 
 // Active state
