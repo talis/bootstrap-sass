@@ -3834,13 +3834,11 @@ td ul.dropdown-menu > li > button:focus,
   position: relative;
   display: block;
   padding: 6px 12px;
-  text-decoration: none;
 }
 .nav > li > a:hover, .nav > li > a:focus,
 .nav > li > button:hover,
 .nav > li > button:focus {
   text-decoration: none;
-  background-color: #e9ecef;
 }
 .nav > li > a:active,
 .nav > li > button:active {
@@ -3849,6 +3847,7 @@ td ul.dropdown-menu > li > button:focus,
 }
 .nav > li.disabled > a {
   color: #ADB5BD;
+  text-decoration: none;
 }
 .nav > li.disabled > a:hover, .nav > li.disabled > a:focus, .nav > li.disabled > a:active, .nav > li.disabled > a:focus:hover {
   color: #ADB5BD;
@@ -3871,9 +3870,6 @@ td ul.dropdown-menu > li > button:focus,
   max-width: none;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid #1f1c3a;
-}
 .nav-tabs > li {
   float: left;
 }
@@ -3881,9 +3877,6 @@ td ul.dropdown-menu > li > button:focus,
   padding-top: 10px;
   padding-bottom: 16px;
   line-height: 1.6;
-}
-.nav-tabs > li > a:hover {
-  background-color: #e9ecef;
 }
 .nav-tabs > li > a:focus {
   outline: 2px solid #1f1c3a;
@@ -3893,18 +3886,16 @@ td ul.dropdown-menu > li > button:focus,
 .nav-tabs > li > a:hover:focus {
   background-color: #e9ecef;
 }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+.nav-tabs > li.active > a {
   color: #1f1c3a;
-  border-color: #fffefb;
   background-image: linear-gradient(0deg, #1f1c3a 4px, transparent 4px);
-  cursor: default;
 }
 .nav-tabs > li.active > a:hover {
-  background-color: #e9ecef;
+  color: #017965;
+  border-color: #fffefb;
 }
 .nav-tabs > li.active > a:hover:focus {
   background-color: #e9ecef;
-  background-image: linear-gradient(0deg, #1f1c3a 4px, transparent 4px);
 }
 .nav-pills > li {
   float: left;
