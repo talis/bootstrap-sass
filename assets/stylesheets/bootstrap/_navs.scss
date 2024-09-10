@@ -100,20 +100,21 @@
         background-color: $white;
       }
 
-      &:hover:focus {
-        background-color: $gray200;
+      &:hover {
+        background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
       }
     }
 
     // Active state, and its :hover to override normal :hover
     &.active > a {
       color: $nav-tabs-active-link-color;
-      background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
+      background-image: linear-gradient(0deg, $nav-tabs-active-link-color 4px, transparent 4px);
       text-decoration: none;
 
       &:hover {
         color: $nav-tabs-active-link-hover-color;
         border-color: $white;
+        background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
       }
 
       &:hover:focus {
