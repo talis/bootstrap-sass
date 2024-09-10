@@ -139,23 +139,15 @@
     // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
-      border: 2px solid transparent;
+      border: 1px solid transparent;
       &:hover {
-        background-color: $gray200;
-      }
-
-      &:focus {
-        background-color: $white;
+        border-color: $nav-pills-link-hover-color;
       }
 
       &:focus,
       &:active {
         border-color: $nav-tabs-border-color;
         outline: 0;
-      }
-
-      &:focus:hover {
-        background-color: $gray200;
       }
     }
     + li {
@@ -164,22 +156,15 @@
 
     // Active state
     &.active > a {
-      & {
-        border: 1px solid $nav-pills-active-link-border-color;
+      border: 1px solid $nav-pills-active-link-border-color;
 
-      }
       &:hover {
-        background-color: $gray200;
+        border: 1px solid $nav-pills-link-hover-color;
       }
 
       &:focus {
-        background-color: $white;
         border: 1px solid $nav-pills-active-link-border-color;
         box-shadow: 0 0 0 1px $nav-pills-active-link-border-color;
-      }
-
-      &:hover:focus {
-        background-color: $gray200;
       }
     }
   }
