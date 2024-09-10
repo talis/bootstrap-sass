@@ -440,16 +440,15 @@
 
       &:hover {
         color: $navbar-default-link-hover-color;
-        background-color: transparentize($color: $black, $amount: 0.75);
+        background-color: $navbar-default-link-hover-bg;
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        // background-color: $navbar-default-link-active-bg;
-        background-image: linear-gradient(0deg, $navbar-default-link-active-color 4px, transparent 4px);
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
       }
     }
     > .disabled > a {
@@ -468,8 +467,8 @@
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: transparentize($color: $black, $amount: 0.75);
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
       }
     }
 

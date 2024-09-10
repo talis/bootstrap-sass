@@ -91,6 +91,7 @@ td ul.dropdown-menu,
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
     border: 0px solid transparent;
     @include user-select(none);
+    text-decoration: underline;
   }
 }
 
@@ -157,7 +158,6 @@ td ul.dropdown-menu > li > button,
   color: $red;
   &:hover {
     color: $red;
-    background-color: $gray200;
   }
 
   &:focus {
