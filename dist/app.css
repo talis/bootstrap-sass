@@ -3864,6 +3864,9 @@ td ul.dropdown-menu > li > a:focus,
   max-width: none;
 }
 
+.nav-tabs {
+  border-bottom: 1px solid #1f1c3a;
+}
 .nav-tabs > li {
   float: left;
 }
