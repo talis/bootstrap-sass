@@ -32,7 +32,6 @@
 }
 
 // The dropdown menu (ul)
-td ul.dropdown-menu,
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -66,6 +65,10 @@ td ul.dropdown-menu,
     @include nav-divider($dropdown-divider-bg);
   }
 
+  a {
+    text-decoration: none;
+  }
+
   // Links within the dropdown menu
   > li > a {
     display: block;
@@ -75,7 +78,6 @@ td ul.dropdown-menu,
     line-height: $line-height-base;
     color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
-    text-decoration: underline;
   }
 
 
@@ -91,7 +93,6 @@ td ul.dropdown-menu,
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
     border: 0px solid transparent;
     @include user-select(none);
-    text-decoration: underline;
   }
 }
 
@@ -99,32 +100,30 @@ td ul.dropdown-menu,
 
 // Hover/Focus state
 td ul.dropdown-menu > li > a,
-td ul.dropdown-menu > li > button,
 .dropdown-menu > li > a,
 .dropdown-menu > li > button {
   &:hover {
     text-decoration: none;
     color: $dropdown-link-hover-color;
+    background-image: linear-gradient(to right, $dropdown-link-hover-color 4px, transparent 4px);
   }
 
   &:focus {
     outline: 2px solid $dropdown-link-color;
     outline-offset: -2px;
-    color: $dropdown-link-hover-color;
   }
 }
 
 // Active state
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > button {
-  &,
-  &:hover,
-  &:focus {
-    padding-left: 20px;
-    font-weight: 600;
-    background-image: linear-gradient(to right, $dropdown-link-color 4px, transparent 4px);
-    background-repeat: no-repeat;
+  padding-left: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, $dropdown-link-color 4px, transparent 4px);
+  background-repeat: no-repeat;
 
+  &:hover {
+    background-image: linear-gradient(to right, $dropdown-link-hover-color 4px, transparent 4px);
   }
 }
 
@@ -158,6 +157,7 @@ td ul.dropdown-menu > li > button,
   color: $red;
   &:hover {
     color: $red;
+    background-color: $gray200;
   }
 
   &:focus {

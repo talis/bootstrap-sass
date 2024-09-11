@@ -3304,7 +3304,6 @@ tbody.collapse.in {
   outline: 0;
 }
 
-td ul.dropdown-menu,
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -3326,19 +3325,19 @@ td ul.dropdown-menu,
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
-td ul.dropdown-menu.pull-right,
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-td ul.dropdown-menu .divider,
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e9ecef;
 }
-td ul.dropdown-menu > li > a,
+.dropdown-menu a {
+  text-decoration: none;
+}
 .dropdown-menu > li > a {
   display: block;
   padding: 3px 20px;
@@ -3347,9 +3346,7 @@ td ul.dropdown-menu > li > a,
   line-height: 1.6;
   color: #1f1c3a;
   white-space: nowrap;
-  text-decoration: underline;
 }
-td ul.dropdown-menu > li > button,
 .dropdown-menu > li > button {
   touch-action: manipulation;
   width: 100%;
@@ -3365,33 +3362,32 @@ td ul.dropdown-menu > li > button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-decoration: underline;
 }
 
 td ul.dropdown-menu > li > a:hover,
-td ul.dropdown-menu > li > button:hover,
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > button:hover {
   text-decoration: none;
   color: #017965;
+  background-image: linear-gradient(to right, #017965 4px, transparent 4px);
 }
 td ul.dropdown-menu > li > a:focus,
-td ul.dropdown-menu > li > button:focus,
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > button:focus {
   outline: 2px solid #1f1c3a;
   outline-offset: -2px;
-  color: #017965;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus,
-.dropdown-menu > .active > button,
-.dropdown-menu > .active > button:hover,
-.dropdown-menu > .active > button:focus {
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > button {
   padding-left: 20px;
   font-weight: 600;
   background-image: linear-gradient(to right, #1f1c3a 4px, transparent 4px);
   background-repeat: no-repeat;
+}
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > button:hover {
+  background-image: linear-gradient(to right, #017965 4px, transparent 4px);
 }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus,
@@ -3417,6 +3413,7 @@ td ul.dropdown-menu > li > button:focus,
 .dropdown-menu > .danger > a:hover,
 .dropdown-menu > .danger > button:hover {
   color: #C42129;
+  background-color: #e9ecef;
 }
 .dropdown-menu > .danger > a:focus,
 .dropdown-menu > .danger > button:focus {
