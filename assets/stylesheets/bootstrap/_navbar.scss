@@ -444,13 +444,14 @@
       }
     }
     > .active > a {
-      &,
-      &:hover,
-      &:focus {
+      color: $navbar-default-link-active-color;
+      background-image: linear-gradient(0deg, $navbar-default-link-active-color 4px, transparent 4px);
+
+      &:hover {
         color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
       }
     }
+
     > .disabled > a {
       &,
       &:hover,
