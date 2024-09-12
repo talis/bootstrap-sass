@@ -4375,7 +4375,7 @@ td ul.dropdown-menu > li > a:focus,
 }
 .navbar-default {
   background-color: #ADF7EA;
-  border-color: #fffefb;
+  border-bottom: 1px solid #1f1c3a;
 }
 .navbar-default .navbar-brand {
   color: #1f1c3a;
@@ -4463,7 +4463,7 @@ td ul.dropdown-menu > li > a:focus,
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #fffefb;
+  border-color: #1f1c3a;
 }
 .navbar-default .navbar-link {
   color: #1f1c3a;
