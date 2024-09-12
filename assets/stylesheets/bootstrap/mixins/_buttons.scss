@@ -80,9 +80,9 @@ $btn-disabled-color: #69727F;
   border-color: $background;
 
   &:hover {
-    background-color: $gray;
+    background-color: $accessible-green;
     color: $color;
-    border-color: $gray;
+    border-color: $accessible-green;
   }
 
   &:focus,

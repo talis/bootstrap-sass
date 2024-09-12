@@ -23,13 +23,8 @@
       display: block;
       padding: $nav-link-padding;
       text-decoration: none;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        background-color: $gray200;
-      }
+
       &:active {
-        text-decoration: none;
         background-color: $nav-link-down-bg;
       }
     }
@@ -50,6 +45,10 @@
         cursor: $cursor-disabled;
         background-color: transparent;
       }
+    }
+
+    &.active > a {
+      text-decoration: none;
     }
   }
 
@@ -89,62 +88,39 @@
   border-bottom: 1px solid $nav-tabs-border-color;
   > li {
     float: left;
-    // Make the list-items overlay the bottom border
-    // margin-bottom: -1px;
 
     // Actual tabs (as links)
     > a {
-      // margin-right: 2px;
       padding-top: 10px;
       padding-bottom: 16px;
 
       line-height: $line-height-base;
-      // border-top: 1px solid transparent;
-      // border-right: 1px solid transparent;
-      // border-left: 1px solid transparent;
-      // border-bottom: 4px solid transparent;
-      // border-radius: $border-radius-base $border-radius-base 0 0;
-
-      &:hover {
-        background-color: $gray200;
-        // border-color: $gray200;
-      }
 
       &:focus {
         outline: 2px solid $brand-primary;
         outline-offset: -1px;
         background-color: $white;
-        // border-top: 1px solid $nav-tabs-border-color;
-        // border-right: 1px solid $nav-tabs-border-color;
-        // border-left: 1px solid $nav-tabs-border-color;
       }
 
-      &:hover:focus {
-        // border-color: $nav-tabs-border-color;
-        background-color: $gray200;
+      &:hover {
+        background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
       }
     }
 
     // Active state, and its :hover to override normal :hover
     &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-tabs-active-link-hover-color;
-        // background-color: $nav-tabs-active-link-hover-bg;
-        border-color: $white;
-        background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
-        // border-bottom: 4px solid $nav-tabs-active-link-hover-border-color;
-        cursor: default;
-      }
+      color: $nav-tabs-active-link-color;
+      background-image: linear-gradient(0deg, $nav-tabs-active-link-color 4px, transparent 4px);
+      text-decoration: none;
 
       &:hover {
-        background-color: $gray200;
+        color: $nav-tabs-active-link-hover-color;
+        border-color: $white;
+        background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
       }
 
       &:hover:focus {
         background-color: $gray200;
-        background-image: linear-gradient(0deg, $nav-tabs-active-link-hover-border-color 4px, transparent 4px);
       }
     }
   }
@@ -165,23 +141,15 @@
     // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
-      border: 2px solid transparent;
+      border: 1px solid transparent;
       &:hover {
-        background-color: $gray200;
-      }
-
-      &:focus {
-        background-color: $white;
+        border-color: $nav-pills-link-hover-color;
       }
 
       &:focus,
       &:active {
         border-color: $nav-tabs-border-color;
         outline: 0;
-      }
-
-      &:focus:hover {
-        background-color: $gray200;
       }
     }
     + li {
@@ -190,22 +158,15 @@
 
     // Active state
     &.active > a {
-      & {
-        border: 1px solid $nav-pills-active-link-border-color;
+      border: 1px solid $nav-pills-active-link-border-color;
 
-      }
       &:hover {
-        background-color: $gray200;
+        border: 1px solid $nav-pills-link-hover-color;
       }
 
       &:focus {
-        background-color: $white;
         border: 1px solid $nav-pills-active-link-border-color;
         box-shadow: 0 0 0 1px $nav-pills-active-link-border-color;
-      }
-
-      &:hover:focus {
-        background-color: $gray200;
       }
     }
   }

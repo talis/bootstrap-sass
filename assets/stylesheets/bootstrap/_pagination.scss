@@ -25,7 +25,6 @@
       &:focus {
         z-index: 2;
         color: $pagination-hover-color;
-        background-color: $pagination-hover-bg;
         border-color: $pagination-hover-border;
       }
     }
@@ -50,10 +49,7 @@
       outline: 0;
       z-index: 2;
       color: $pagination-hover-color;
-      background-color: $pagination-hover-bg;
-      // background-color: $gray200;
-      // border-color:  $pagination-hover-border;
-      // border-color: $gray400;
+      background-image: linear-gradient(0deg, $pagination-hover-color 4px, transparent 4px);
     }
 
     &:focus {
@@ -84,12 +80,13 @@
 
   > .active > a,
   > .active > span {
-    &,
+    background-image: linear-gradient(0deg, $brand-primary 4px, transparent 4px);
+
     &:hover,
     &:focus {
       z-index: 3;
-      color: $pagination-active-color;
-      background-image: linear-gradient(0deg, $brand-primary 4px, transparent 4px);
+      color: $pagination-hover-color;
+      background-image: linear-gradient(0deg, $pagination-hover-color 4px, transparent 4px);
       font-weight: 600;
 
       background-color: $pagination-active-bg;
