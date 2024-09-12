@@ -3413,7 +3413,6 @@ td ul.dropdown-menu > li > a:focus,
 .dropdown-menu > .danger > a:hover,
 .dropdown-menu > .danger > button:hover {
   color: #C42129;
-  background-color: #e9ecef;
 }
 .dropdown-menu > .danger > a:focus,
 .dropdown-menu > .danger > button:focus {
